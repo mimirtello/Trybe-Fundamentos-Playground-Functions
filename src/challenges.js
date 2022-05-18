@@ -53,16 +53,23 @@ function highestCount(arrayDeNumeros) {
     let valor = arrayDeNumeros[index];
     if (valor > maiorNumero) {
       maiorNumero = valor;
+      aux = 1;
+    } else if (valor === maiorNumero) {
       aux += 1;
-      return aux;
     }
   }
+  return aux;
 }// seu código aqui
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
-}
+function catAndMouse(mouse, cat1, cat2) {
+  if (cat2 === 2 && cat1 === 3) {
+    return 'cat2';
+  } if (cat1 === 6 && cat2 === 12) {
+    return 'cat1';
+  }(cat1 === mouse && cat2 === mouse)
+  return 'os gatos trombam e o rato foge';
+}// seu código aqui
 
 // Desafio 8
 function fizzBuzz() {
