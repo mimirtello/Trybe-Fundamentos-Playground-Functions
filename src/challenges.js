@@ -63,13 +63,14 @@ function highestCount(arrayDeNumeros) {
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {
-  if (cat2 === 2 && cat1 === 3) {
-    return 'cat2';
-  } if (cat1 === 6 && cat2 === 12) {
+  let mensagem = 'os gatos trombam e o rato foge';
+  if (Math.abs(mouse - cat1) < Math.abs(mouse - cat2)) {
     return 'cat1';
-  }(cat1 === mouse && cat2 === mouse)
-  return 'os gatos trombam e o rato foge';
-}// seu código aqui
+  } if (Math.abs(mouse - cat2) < Math.abs(mouse - cat1)) {
+    return 'cat2';
+  } return mensagem;
+}
+// seu código aqui
 
 // Desafio 8
 function fizzBuzz() {
