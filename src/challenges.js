@@ -4,13 +4,13 @@ function compareTrue(valor1, valor2) {
     return true;
   }
   return false;
-} // seu código aqui
+} 
 
 // // Desafio 2
 function calcArea(base, height) {
   let area = ((base * height) / 2);
   return area;
-  // seu código aqui
+  
 }
 
 // Desafio 3
@@ -20,7 +20,7 @@ function splitSentence(palavra) {
     palavra[index] = palavraLista;
   }
   return palavraLista;
-}// seu código aqui
+}
 
 // Desafio 4
 function concatName(arrayDeStrings) {
@@ -43,7 +43,7 @@ function footballPoints(wins, ties) {
     pontos = 0;
   }
   return pontos;
-} // seu código aqui
+} 
 
 // Desafio 6
 function highestCount(arrayDeNumeros) {
@@ -59,9 +59,10 @@ function highestCount(arrayDeNumeros) {
     }
   }
   return aux;
-}// seu código aqui
+}
 
 // Desafio 7
+//Consultei a documentação do W3 achools para entender a função Math.abs
 function catAndMouse(mouse, cat1, cat2) {
   let mensagem = 'os gatos trombam e o rato foge';
   if (Math.abs(mouse - cat1) < Math.abs(mouse - cat2)) {
@@ -70,7 +71,7 @@ function catAndMouse(mouse, cat1, cat2) {
     return 'cat2';
   } return mensagem;
 }
-// seu código aqui
+
 
 // Desafio 8
 function fizzBuzz(arrayDeNumeros) {
@@ -83,15 +84,14 @@ function fizzBuzz(arrayDeNumeros) {
     } else if (arrayDeNumeros[index] % 5 === 0) {
       arrayDeStrings.push('buzz');
     }else{
-       arrayDeStrings.push('bug!')
-    };
+      arrayDeStrings.push('bug!')
+    }
   }return arrayDeStrings;
 }
- 
-// seu código aqui
+
 
 // Desafio 9
-function encode() {
+function encode(string) {
   // seu código aqui
 }
 function decode() {
