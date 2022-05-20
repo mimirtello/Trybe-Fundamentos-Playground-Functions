@@ -92,10 +92,43 @@ function fizzBuzz(arrayDeNumeros) {
 
 // Desafio 9
 function encode(string) {
-  // seu código aqui
+  let listaNumeros=[1, 2, 3, 4, 5]
+  let vogais=['a','e','i','o','u']
+  let palavra = '';
+  
+  for(let index = 0; index < string.length; index +=1){
+    for(let index2 = 0; index2 < vogais.length; index2 +=1){
+
+    if(string[index]===vogais[index2]){
+      palavra +=listaNumeros[index2]
+      break
+    }
+    else if(index2===vogais.length-1){
+      palavra+=string[index]
+    }
+   }   
+  }
+   return palavra
 }
-function decode() {
-  // seu código aqui
+  
+function decode(string) {
+  let listaNumeros=['1','2','3','4','5']
+  let vogais=['a','e','i','o','u']
+  let palavra = ''
+  for(let index = 0; index < string.length; index +=1){
+    for(let index2 = 0; index2 < listaNumeros.length; index2 +=1){
+
+      if(string[index]===listaNumeros[index2]){
+        palavra +=vogais[index2]
+        break
+      }
+      else if(index2===listaNumeros.length-1){
+        palavra+=string[index]
+      }
+     }   
+    }
+     return palavra
+   
 }
 
 // Desafio 10
